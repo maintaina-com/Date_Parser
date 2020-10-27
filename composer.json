@@ -1,41 +1,38 @@
 {
-    "name": "horde/date-parser",
+    "name": "horde/date_parser",
     "description": "Date parser library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org/libraries/Horde_Date_Parser",
     "license": "LGPL-2.1",
     "authors": [
         {
-            "name": "Chuck Hagenbuch",
-            "email": "chuck@horde.org",
-            "role": "lead"
-        },
-        {
             "name": "Jan Schneider",
             "email": "jan@horde.org",
             "role": "lead"
+        },
+        {
+            "name": "Chuck Hagenbuch",
+            "email": "chuck@horde.org",
+            "role": "lead"
         }
     ],
-    "version": "2.0.7",
-    "time": "2019-11-22",
+    "version": "2.0.8",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Date": "^2",
-        "pear-pear.horde.org/Horde_Support": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2"
+        "horde/date": "dev-master",
+        "horde/support": "dev-master",
+        "horde/util": "dev-master"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Test": "^2.1"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Date_Parser": "2.*",
-        "pear-horde/Horde_Date_Parser": "2.*"
+        "horde/test": "^2.1"
     },
     "autoload": {
         "psr-0": {
